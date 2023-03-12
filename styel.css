@@ -1,0 +1,57 @@
+
+
+  #weather {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0d0d0d;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  #city {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  #condition {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  #temperature {
+    font-size: 72px;
+    margin-bottom: 10px;
+  }
+  
+  #humidity, #wind {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  #search:focus {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #weather {
+    animation: fadein 2s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  #weather-image {
+    width: 50px;
+    height: 50px;
+  }
